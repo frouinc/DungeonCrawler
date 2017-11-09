@@ -1,0 +1,8 @@
+#ifndef CONFIG_H
+# define CONFIG_H
+
+# define DungeonCrawler_VERSION_MAJOR @DungeonCrawler_VERSION_MAJOR@
+# define DungeonCrawler_VERSION_MINOR @DungeonCrawler_VERSION_MINOR@
+# define DEBUG @DungeonCrawler_DEBUG_MODE@
+
+#endif
