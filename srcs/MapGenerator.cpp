@@ -6,7 +6,7 @@
 /*   By: cyrillef <cyrillef@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/13 16:15:10 by cyrillef          #+#    #+#             */
-/*   Updated: 2017/11/15 23:27:42 by cyrillefrouin    ###   ########.fr       */
+/*   Updated: 2017/11/17 18:57:49 by cfrouin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ void									MapGenerator::PlaceRoom(int posX, int posY, int sizeX, int sizeY)
 {
 	for (int y = posY; y < posY + sizeY; y++) {
 		for (int x = posX; x < posX + sizeX; x++) {
-			this->map[y][x].setType(-2);
+			this->map[y][x].setType(2);
 		}
 	}
 }
@@ -96,13 +96,22 @@ void									MapGenerator::GenerateRooms()
 	}
 }
 
+int										MapGenerator::GenerateCorridorsR(int x, int y)
+{
+	int									sx = 0, sy = 0, tx = x, ty = y;
 
-// remplit toutes les cases qui touchent pas
+	while (this->map[ty][tx].getType() == 2) {
+
+	}
+}
+
 void									MapGenerator::GenerateCorridors()
 {
 	for (int y = 1; y < this->sizeY - 1; y++) {
 		for (int x = 1; x < this->sizeX - 1; x++) {
-			if ()
+			if (this->map[y][x].getType() == 2) {
+				this->GenerateCorridorsR(x, y);
+			}
 		}
 	}
 }
@@ -113,7 +122,7 @@ void									MapGenerator::Generate()
 	this->GenerateCorridors();
 	for (int y = 0; y < this->sizeY; y++) {
 		for (int x = 0; x < this->sizeX; x++) {
-			// if ()
+			std::cout << this->map[y][x].getType();
 		}
 		std::cout << std::endl;
 	}
