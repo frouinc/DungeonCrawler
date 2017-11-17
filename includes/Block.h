@@ -1,22 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   DungeonCrawler.h                                   :+:      :+:    :+:   */
+/*   Block.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cyrillef <cyrillef@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/09 14:29:16 by cyrillef          #+#    #+#             */
-/*   Updated: 2017/11/10 14:14:12 by cyrillefrouin    ###   ########.fr       */
+/*   Created: 2017/11/10 13:00:09 by cyrillef          #+#    #+#             */
+/*   Updated: 2017/11/10 13:12:03 by cyrillefrouin    ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef DUNGEON_CRAWLER_H
-# define DUNGEON_CRAWLER_H
+#ifndef BLOCK_H
+# define BLOCK_H
 
-# include <iostream>
-# include <string>
-# include <SFML/Graphics.hpp>
-# include <fstream>
-# include "config.h"
+class			Block
+{
+private:
+	int			type;
+	bool		passable;
+
+public:
+	Block();
+	Block(int &type);
+	~Block();
+
+	void		setType(const int &type);
+	const int	&getType() const;
+	void		setPassable(const bool &passable);
+	const bool	&getPassable();
+};
 
 #endif

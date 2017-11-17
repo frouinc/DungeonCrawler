@@ -5,4 +5,11 @@
 # define DungeonCrawler_VERSION_MINOR @DungeonCrawler_VERSION_MINOR@
 # define DEBUG @DungeonCrawler_DEBUG_MODE@
 
+# define WINDOW_X 800
+# define WINDOW_Y 600
+# define SCALE 100
+# define FPS 30
+# define TEXTURE_SIZE 256
+# define TEXTURE_SIZEF 256.f
+
 #endif

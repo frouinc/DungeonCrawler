@@ -22,6 +22,11 @@ set(EXECUTABLE_NAME "DungeonCrawler")
 add_executable(${EXECUTABLE_NAME}
 	${PROJECT_SOURCE_DIR}/main.cpp
 	${PROJECT_SOURCE_DIR}/Game.cpp
+	${PROJECT_SOURCE_DIR}/Map.cpp
+	${PROJECT_SOURCE_DIR}/MapGenerator.cpp
+	${PROJECT_SOURCE_DIR}/Block.cpp
+	${PROJECT_SOURCE_DIR}/Character.cpp
+	${PROJECT_SOURCE_DIR}/Display.cpp
 )
 
 # Set version information in a config.h file

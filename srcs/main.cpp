@@ -6,11 +6,11 @@
 /*   By: cyrillef <cyrillef@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/09 14:30:07 by cyrillef          #+#    #+#             */
-/*   Updated: 2017/11/09 14:55:43 by cyrillefrouin    ###   ########.fr       */
+/*   Updated: 2017/11/15 17:53:13 by cyrillefrouin    ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "DungeonCrawler.h"
+#include "Game.h"
 
 int main()
 {
